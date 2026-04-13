@@ -79,4 +79,6 @@ python translate_client.py "Hello, welcome to Morocco?"
 cd php-client
 php translate.php "Hello, welcome to Morocco?"
 ```
+## Security 
+in config file, only the placeholders are commited because the API key can be only in environment variables without being commited. 
 

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-web xmlns="https://www.jboss.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="https://www.jboss.com/xml/ns/javaee https://www.jboss.org/j2ee/schema/jboss-web_5_2.xsd"
+           version="5.2">
+    <context-root>/translator-service</context-root>
+</jboss-web>

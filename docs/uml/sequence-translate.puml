@@ -1,0 +1,19 @@
+@startuml
+title Translate Request Sequence
+
+actor User
+participant Client
+participant Backend as "TranslatorResource"
+participant Service as "GroqTranslationService"
+participant Groq
+
+User -> Client: Enter text and click Translate
+Client -> Backend: POST /translator/translate (Basic Auth + JSON)
+Backend -> Service: translateToDarija(text)
+Service -> Groq: Chat Completions API request
+Groq --> Service: translated content
+Service --> Backend: TranslationOutcome
+Backend --> Client: TranslationResponse JSON
+Client --> User: Show Darija result
+
+@enduml

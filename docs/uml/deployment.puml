@@ -1,0 +1,23 @@
+@startuml
+title Darija Translator - Deployment
+
+node "Client Devices" {
+  artifact "Mobile App (Expo)"
+  artifact "Chrome Extension"
+  artifact "Python Client"
+  artifact "PHP Client"
+}
+
+node "WildFly Server" {
+  artifact "translator-service.war"
+}
+
+cloud "Groq API" as Groq
+
+"Mobile App (Expo)" --> "translator-service.war"
+"Chrome Extension" --> "translator-service.war"
+"Python Client" --> "translator-service.war"
+"PHP Client" --> "translator-service.war"
+"translator-service.war" --> Groq
+
+@enduml

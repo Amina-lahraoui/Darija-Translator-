@@ -1,0 +1,86 @@
+:root {
+  font-family: system-ui, Segoe UI, sans-serif;
+  color: #1a1a1a;
+  background: #f6f7fb;
+}
+
+body {
+  margin: 0;
+  padding: 12px;
+  max-width: 520px;
+}
+
+h1 {
+  font-size: 1.1rem;
+  margin: 0 0 4px;
+}
+
+.hint {
+  font-size: 0.75rem;
+  color: #555;
+  margin: 0 0 12px;
+}
+
+.config,
+.translate {
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+input[type="url"],
+input[type="text"],
+input[type="password"],
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 4px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.status {
+  font-size: 0.8rem;
+  color: #444;
+  min-height: 1.2em;
+}
+
+.status.error {
+  color: #b91c1c;
+}

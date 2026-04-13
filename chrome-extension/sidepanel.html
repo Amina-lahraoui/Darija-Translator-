@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darija Translator</title>
+  <link rel="stylesheet" href="sidepanel.css" />
+</head>
+<body>
+  <header>
+    <h1>Darija Translator</h1>
+    <p class="hint">Uses your REST API (Basic auth + Groq on the server).</p>
+  </header>
+
+  <section class="config">
+    <label>API base URL
+      <input type="url" id="baseUrl" placeholder="http://localhost:8080/translator-service/api" />
+    </label>
+    <label>Username
+      <input type="text" id="username" autocomplete="username" />
+    </label>
+    <label>Password
+      <input type="password" id="password" autocomplete="current-password" />
+    </label>
+    <button type="button" id="saveConfig">Save settings</button>
+  </section>
+
+  <section class="translate">
+    <label>Source text
+      <textarea id="source" rows="6" placeholder="English or other source text..."></textarea>
+    </label>
+    <div class="row">
+      <button type="button" id="translateBtn">Translate</button>
+      <button type="button" id="readAloudBtn">Read aloud</button>
+      <button type="button" id="listenGoogleBtn">Listen (Google)</button>
+    </div>
+    <label>Darija result
+      <textarea id="result" rows="6" readonly placeholder="Translation appears here..."></textarea>
+    </label>
+    <p id="status" class="status" aria-live="polite"></p>
+  </section>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>

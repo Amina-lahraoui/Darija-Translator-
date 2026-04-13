@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Darija Translator (Side Panel)",
+  "version": "1.0.2",
+  "description": "Translate selected text to Moroccan Darija via  Jakarta REST backend (Groq).",
+  "permissions": ["contextMenus", "sidePanel", "storage", "activeTab", "scripting", "tts"],
+  "host_permissions": [
+    "http://localhost:8080/*",
+    "http://127.0.0.1:8080/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "action": {
+    "default_title": "Darija Translator"
+  }
+}

@@ -79,6 +79,8 @@ python translate_client.py "Hello, welcome to Morocco?"
 cd php-client
 php translate.php "Hello, welcome to Morocco?"
 ```
+## Class Diagram of the Darija Translator Project
+![Alt text](/to/image.png)
 ## Security 
 in config file, only the placeholders are commited because the API key can be only in environment variables without being commited. 
 

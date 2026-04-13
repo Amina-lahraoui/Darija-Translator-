@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Darija Translator",
+    "slug": "darija-translator-client",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#f6f7fb"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsLocalNetworking": true
+        }
+      }
+    },
+    "android": {
+      "usesCleartextTraffic": true,
+      "adaptiveIcon": {
+        "backgroundColor": "#f6f7fb"
+      }
+    },
+    "plugins": [
+      "expo-asset"
+    ]
+  }
+}

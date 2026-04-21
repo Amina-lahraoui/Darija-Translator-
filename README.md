@@ -44,8 +44,8 @@ mvn clean package
 - Deploy backend/target/translator-service.war to WildFly, then test either using:
 http://localhost:8080/translator-service/api/about
 http://127.0.0.1:8080/translator-service/api/about
-**2) Mobile App**
-  **2) Mobile**
+
+**2) Mobile App**  
 ```text
 cd  mobile
 npm install

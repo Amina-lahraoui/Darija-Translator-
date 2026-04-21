@@ -74,7 +74,7 @@ python -m pip install -r requirements.txt
 python translate_client.py "Hello, welcome to Morocco?"
 ```
 
-**5) PHP Client**
+**4) PHP Client**
 ```text
 cd php-client
 php translate.php "Hello, welcome to Morocco?"
